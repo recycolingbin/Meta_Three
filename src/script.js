@@ -124,48 +124,6 @@ window.addEventListener('touchstart', onPointerDown);
 window.addEventListener('touchend', onPointerUp);
 window.addEventListener('touchmove', onPointerMove);
 
-// Button event listeners for movement
-document.getElementById('runButton').addEventListener('click', () => {
-  isRunning = true;
-});
-
-document.getElementById('squatButton').addEventListener('click', () => {
-  isSquatting = true; // Set squatting state to true
-});
-
-document.getElementById('jumpButton').addEventListener('click', () => {
-  isJumping = true; // Set jumping state to true
-});
-
-// Movement buttons for WASD
-document.getElementById('wButton').addEventListener('mousedown', () => {
-  keysPressed['KeyW'] = true;
-});
-document.getElementById('wButton').addEventListener('mouseup', () => {
-  keysPressed['KeyW'] = false;
-});
-
-document.getElementById('aButton').addEventListener('mousedown', () => {
-  keysPressed['KeyA'] = true;
-});
-document.getElementById('aButton').addEventListener('mouseup', () => {
-  keysPressed['KeyA'] = false;
-});
-
-document.getElementById('sButton').addEventListener('mousedown', () => {
-  keysPressed['KeyS'] = true;
-});
-document.getElementById('sButton').addEventListener('mouseup', () => {
-  keysPressed['KeyS'] = false;
-});
-
-document.getElementById('dButton').addEventListener('mousedown', () => {
-  keysPressed['KeyD'] = true;
-});
-document.getElementById('dButton').addEventListener('mouseup', () => {
-  keysPressed['KeyD'] = false;
-});
-
 
 // Renderer
 const renderer = new THREE.WebGLRenderer({

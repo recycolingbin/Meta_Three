@@ -8,18 +8,6 @@ body {
     overflow: hidden;
 }
 
-#controls {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-}
-
-button {
-    float: left;
-    margin-right: 10px;
-    padding: 10px 15px;
-    font-size: 16px;
-}
 
 .canvas {
     position: fixed;
